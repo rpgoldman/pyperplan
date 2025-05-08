@@ -386,9 +386,9 @@ class TraversePDDLDomain(PDDLVisitor):
                 # Check whether predicate was defined.
                 if not c.key in self._predicates:
                     raise SemanticError(
-                        "Error unknown predicate "
+                        "Error unknown predicate \""
                         + c.key
-                        + " used in precondition of action"
+                        + "\" used in precondition of action"
                     )
                 # Call helper.
                 self.add_precond(precond, c)
